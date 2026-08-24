@@ -66,11 +66,18 @@ body {
 .stamp .sep { opacity: 0.4; padding: 0 0.4em; }
 
 .card {
+  position: relative;
   background: var(--card);
   border: 1px solid var(--rule);
   border-radius: 14px;
   overflow: hidden;
   margin-bottom: 0.875rem;
+}
+
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .shot {
@@ -82,7 +89,11 @@ body {
   border-bottom: 1px solid var(--rule);
 }
 
-.body { padding: 1rem 1.125rem 1.125rem; }
+.body {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 1.125rem 1.125rem;
+}
 
 .meta {
   display: flex;
@@ -164,7 +175,8 @@ a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 <p class="stamp">2026-08-23<span class="sep">/</span>8 items</p>
 </header>
 <article class="card">
-<a href="https://www.petermerholz.com/newsletter/bridging-the-legibility-gap" rel="noopener"><img class="shot" src="https://images.unsplash.com/photo-1759849556089-b5789046530b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGJyaWRnZSUyMGJlaW5nJTIwYnVpbHR8ZW58MHx8fHwxNzg3MjQ0NDQ3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=2000" alt="Design&#x27;s legibility problem gets a sequel, not just a diagnosis" loading="lazy"></a>
+<a class="card-link" href="https://www.petermerholz.com/newsletter/bridging-the-legibility-gap" rel="noopener" aria-label="Design&#x27;s legibility problem gets a sequel, not just a diagnosis"></a>
+<img class="shot" src="https://images.unsplash.com/photo-1759849556089-b5789046530b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fGJyaWRnZSUyMGJlaW5nJTIwYnVpbHR8ZW58MHx8fHwxNzg3MjQ0NDQ3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=2000" alt="Design&#x27;s legibility problem gets a sequel, not just a diagnosis" loading="lazy">
 <div class="body">
 <div class="meta"><span class="num">01</span><span class="source"><a href="https://www.petermerholz.com/newsletter/bridging-the-legibility-gap" rel="noopener">petermerholz.com</a></span></div>
 <h2>Design&#x27;s legibility problem gets a sequel, not just a diagnosis</h2>
@@ -172,7 +184,8 @@ a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 <p class="sowhat"><b>So what</b>this sharpens the budget argument beyond &quot;design is undervalued&quot; into &quot;design&#x27;s determinacy is illegible to functions that plan in Jira tickets and campaign spend,&quot; which is a more useful frame for the next resourcing conversation.</p>
 </div></article>
 <article class="card">
-<a href="https://thewisemarketer.com/the-loyalty-newswire-august-17-2026" rel="noopener"><img class="shot" src="https://thewisemarketer.com/wp-content/uploads/2022/11/mcdonalds-adult-happy-meals.jpg" alt="A subject access request turns a loyalty scheme inside out" loading="lazy"></a>
+<a class="card-link" href="https://thewisemarketer.com/the-loyalty-newswire-august-17-2026" rel="noopener" aria-label="A subject access request turns a loyalty scheme inside out"></a>
+<img class="shot" src="https://thewisemarketer.com/wp-content/uploads/2022/11/mcdonalds-adult-happy-meals.jpg" alt="A subject access request turns a loyalty scheme inside out" loading="lazy">
 <div class="body">
 <div class="meta"><span class="num">02</span><span class="source"><a href="https://thewisemarketer.com/the-loyalty-newswire-august-17-2026" rel="noopener">thewisemarketer.com</a></span></div>
 <h2>A subject access request turns a loyalty scheme inside out</h2>
@@ -180,7 +193,8 @@ a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 <p class="sowhat"><b>So what</b>this is the transparency test any AI-personalised loyalty scheme should expect a determined customer or journalist to run, and it&#x27;s worth quietly rehearsing what your own subject access response would look like.</p>
 </div></article>
 <article class="card">
-<a href="https://www.pymnts.com/artificial-intelligence-2/2026/how-brands-are-reinventing-loyalty-for-the-ai-decision-maker" rel="noopener"><img class="shot" src="https://www.pymnts.com/wp-content/uploads/2026/03/AI-agents-shopping-loyalty.jpeg" alt="Loyalty is being redesigned for a machine customer, not a human one" loading="lazy"></a>
+<a class="card-link" href="https://www.pymnts.com/artificial-intelligence-2/2026/how-brands-are-reinventing-loyalty-for-the-ai-decision-maker" rel="noopener" aria-label="Loyalty is being redesigned for a machine customer, not a human one"></a>
+<img class="shot" src="https://www.pymnts.com/wp-content/uploads/2026/03/AI-agents-shopping-loyalty.jpeg" alt="Loyalty is being redesigned for a machine customer, not a human one" loading="lazy">
 <div class="body">
 <div class="meta"><span class="num">03</span><span class="source"><a href="https://www.pymnts.com/artificial-intelligence-2/2026/how-brands-are-reinventing-loyalty-for-the-ai-decision-maker" rel="noopener">pymnts.com</a></span></div>
 <h2>Loyalty is being redesigned for a machine customer, not a human one</h2>
@@ -188,7 +202,8 @@ a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 <p class="sowhat"><b>So what</b>if agents become a real channel, personalisation and offer design need a second interface that a model can parse cleanly, which is a genuinely new constraint for app, web and Clubcard-style experiences.</p>
 </div></article>
 <article class="card">
-<a href="https://daringfireball.net/2026/08/apple_eu_business_terms_conceding_little" rel="noopener"><img class="shot" src="https://daringfireball.net/graphics/df-wide-card.png" alt="Apple&#x27;s EU settlement shows how little a regulator can actually extract" loading="lazy"></a>
+<a class="card-link" href="https://daringfireball.net/2026/08/apple_eu_business_terms_conceding_little" rel="noopener" aria-label="Apple&#x27;s EU settlement shows how little a regulator can actually extract"></a>
+<img class="shot" src="https://daringfireball.net/graphics/df-wide-card.png" alt="Apple&#x27;s EU settlement shows how little a regulator can actually extract" loading="lazy">
 <div class="body">
 <div class="meta"><span class="num">04</span><span class="source"><a href="https://daringfireball.net/2026/08/apple_eu_business_terms_conceding_little" rel="noopener">daringfireball.net</a></span></div>
 <h2>Apple&#x27;s EU settlement shows how little a regulator can actually extract</h2>
@@ -196,7 +211,8 @@ a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 <p class="sowhat"><b>So what</b>this is useful evidence for how slowly and incompletely EU platform regulation actually bites in practice, which matters when deciding how much app architecture or payment flow to build around assumptions of regulatory openness.</p>
 </div></article>
 <article class="card">
-<a href="https://www.thediff.co/archive/who-hedges-where" rel="noopener"><img class="shot" src="https://storage.ghost.io/c/93/95/9395c514-99f3-44f7-b3e2-78a3fe65a44f/content/images/size/w1200/2022/02/Screenshot-2022-02-17-at-12.51.50-1.png" alt="Winning the A/B test isn&#x27;t the same as making the right call" loading="lazy"></a>
+<a class="card-link" href="https://www.thediff.co/archive/who-hedges-where" rel="noopener" aria-label="Winning the A/B test isn&#x27;t the same as making the right call"></a>
+<img class="shot" src="https://storage.ghost.io/c/93/95/9395c514-99f3-44f7-b3e2-78a3fe65a44f/content/images/size/w1200/2022/02/Screenshot-2022-02-17-at-12.51.50-1.png" alt="Winning the A/B test isn&#x27;t the same as making the right call" loading="lazy">
 <div class="body">
 <div class="meta"><span class="num">05</span><span class="source"><a href="https://www.thediff.co/archive/who-hedges-where" rel="noopener">thediff.co</a></span></div>
 <h2>Winning the A/B test isn&#x27;t the same as making the right call</h2>
@@ -204,7 +220,8 @@ a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 <p class="sowhat"><b>So what</b>as AI-generated content and personalisation start winning short-run metrics, this is a useful check on whether &quot;it tested better&quot; is actually the right bar for brand and trust decisions in loyalty and CX.</p>
 </div></article>
 <article class="card">
-<a href="https://www.interconnects.ai/p/lessons-from-the-hacks" rel="noopener"><img class="shot" src="https://substackcdn.com/image/fetch/$s_!axmd!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F61d577fe-7a20-4a72-8158-79ddbd2ec97e_3182x1790.png" alt="AI is moving faster than the institutions meant to govern it" loading="lazy"></a>
+<a class="card-link" href="https://www.interconnects.ai/p/lessons-from-the-hacks" rel="noopener" aria-label="AI is moving faster than the institutions meant to govern it"></a>
+<img class="shot" src="https://substackcdn.com/image/fetch/$s_!axmd!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F61d577fe-7a20-4a72-8158-79ddbd2ec97e_3182x1790.png" alt="AI is moving faster than the institutions meant to govern it" loading="lazy">
 <div class="body">
 <div class="meta"><span class="num">06</span><span class="source"><a href="https://www.interconnects.ai/p/lessons-from-the-hacks" rel="noopener">interconnects.ai</a></span></div>
 <h2>AI is moving faster than the institutions meant to govern it</h2>
@@ -212,6 +229,7 @@ a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 <p class="sowhat"><b>So what</b>this is a sharp frame for thinking about UK/EU AI regulation generally, including data and personalisation rules, likely to arrive reactively rather than ahead of the risk.</p>
 </div></article>
 <article class="card">
+<a class="card-link" href="https://stratechery.com/2026/nvidia-finds-new-ways-for-customers-to-raise-money" rel="noopener" aria-label="The AI buildout&#x27;s financing is starting to look like the risk itself"></a>
 <div class="body">
 <div class="meta"><span class="num">07</span><span class="source"><a href="https://stratechery.com/2026/nvidia-finds-new-ways-for-customers-to-raise-money" rel="noopener">stratechery.com</a></span></div>
 <h2>The AI buildout&#x27;s financing is starting to look like the risk itself</h2>
